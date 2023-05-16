@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="İş, CV, İş Başvuru" />
+    <meta name="author" content="Anıl Gündüz" />
+    <meta name="description" content="İş başvuru sayfası" />
+    <link rel="stylesheet" href="styles.css">
+    <title>İş Başvuru</title>
+  </head>
+  <body>
+    <header>
+      <h1>İş Başvurusu</h1>
+    </header>
+    <main>
+      <article>
+        <section>
+          <div>
+            <label for="firstName">Adınız</label>
+            <input type="text" name="firstName" placeholder="Adınızı Girin" required>
+          </div>
+          <div>
+            <label for="lastName">Soyadınız</label>
+            <input type="text" name="lastName" placeholder="Soyadınızı Girin" required>
+          </div>
+        </section>
+        <section>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email Giriniz" required>
+          </div>
+          <div>
+            <label for="job">Mesleğiniz</label>
+            <select name="job">
+              <option value="">Mesleğinizi Seçin</option>
+              <option value="frontend">Frontend Developer</option>
+              <option value="backend">Backend Developer</option>
+              <option value="businessAnalyst">Business Analyst</option>
+              <option value="sapConsultant">SAP Consultant</option>
+              <option value="uiUx">UI/UX Designer</option>
+              <option value="fullStack">Full Stack Developer</option>
+              <option value="digitalMarketing">Digital Marketing Specialist</option>
+            </select>
+          </div>
+        </section>
+        <section id="adress">
+            <label for="adress">Adresiniz</label>
+            <textarea name="adress" cols="50" rows="4" placeholder="Adresinizi Girin"></textarea>
+        </section>
+        <section>
+          <div>
+            <label for="city">Şehir</label>
+            <input type="text" name="city" placeholder="Şehri Girin" required>
+          </div>
+          <div>
+            <label for="date">İşe Başlama Tarihi</label>
+            <input type="date" name="date" value="01-06-2023" required>
+          </div>
+        </section>
+        <section id="cv">
+          <div>
+            <label for="cv">CV</label>
+            <input type="file" name="cv" required>
+          </div>
+          <button type="submit">Başvur</button>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Copyright © <a href="https://github.com/agunduuz">Anıl GÜNDÜZ</a></p>
+    </footer>
+  </body>
+</html>
